@@ -1,7 +1,21 @@
-@charset utf-8;
+@charset "utf-8";
+
+/* base */
+
+html {
+  margin: 0;
+  padding: 0;
+}
 
 body {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 2.0;
+}
 
+h1,h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -23,6 +37,7 @@ header{
 .headerwrapper img{
   width: 239px;
   height: 53px;
+  margin-left: 27px;
 }
 
 .headerwrapper ul {
@@ -46,7 +61,51 @@ header{
 
 .headerwrapper a:hover{
   opacity: 0.5;
+  border-bottom: 1px solid #434343;
+  margin-bottom: -1px;
 }
+
+/* main */
+.mainimg{
+  background-image: url(images/20200618_172012000_iOS.png);
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.mainwrapper {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainwrapper ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.mainwrapper li {
+  width: 300px;
+}
+
+.mainwrapper p{
+  height: 100px;
+}
+
+/* goodswrapper */
+.goodswrapper iframe{
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+
+
+
+/* footer */
 
 footer{
   width: auto;
