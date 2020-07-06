@@ -379,7 +379,7 @@ header li.phone {
 
   .whatme h2,
   p {
-    text-align: centers;
+    text-align: center;
   }
 
   .whatme a {
@@ -425,7 +425,17 @@ header li.phone {
   position: relative;
 }
 
-
+.programing ul li figure::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(50, 50, 50, 0.7);
+  padding-top: 43%;
+  transition: all .6s ease;
+}
 
 .programing .content-wrapper span {
   position: absolute;
@@ -437,4 +447,27 @@ header li.phone {
   color: #fff;
   font-weight: 2rem;
   transform: translate(-50%,-50%) skewY(-2deg) ;
+}
+
+.programing ul li a:hover figure::after{
+  background: rgba(50, 50, 50, 0.4);
+  transition: all .6s ease;
+}
+
+@media screen and (max-width: 767px){
+  .programing ul {
+    transform: none;
+  }
+
+  .programing li span{
+    transform: translate(-50%,-50%);
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .programing ul li {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
 }
